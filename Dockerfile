@@ -12,7 +12,6 @@ RUN set -eux; \
     && unzip -d /opt grok_exporter-$GROK_EXPORTER_VERSION.linux-$ARCH.zip \
     && ln -s /opt/grok_exporter-$GROK_EXPORTER_VERSION.linux-$ARCH /opt/grok
 
-USER nobody
 EXPOSE 9144
 
 CMD ["/opt/grok/grok_exporter", "-config", "/config.yaml"]
