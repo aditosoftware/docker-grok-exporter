@@ -1,0 +1,3 @@
+= grok_exporter
+
+Upstream release packaged into a container. Expects /config.yaml to be present to run out of the box.
